@@ -1,6 +1,6 @@
 {
-    "last_node_id": 66,
-    "last_link_id": 90,
+    "last_node_id": 68,
+    "last_link_id": 92,
     "nodes": [
         {
             "id": 10,
@@ -82,7 +82,7 @@
                 122
             ],
             "flags": {},
-            "order": 12,
+            "order": 14,
             "mode": 0,
             "inputs": [
                 {
@@ -241,7 +241,7 @@
                 186
             ],
             "flags": {},
-            "order": 22,
+            "order": 21,
             "mode": 0,
             "inputs": [
                 {
@@ -449,7 +449,7 @@
                 "Node name for S&R": "KSampler"
             },
             "widgets_values": [
-                654689829781574,
+                1064581838240276,
                 "randomize",
                 20,
                 8,
@@ -553,7 +553,7 @@
                 46
             ],
             "flags": {},
-            "order": 13,
+            "order": 15,
             "mode": 0,
             "inputs": [
                 {
@@ -596,7 +596,7 @@
                 218
             ],
             "flags": {},
-            "order": 10,
+            "order": 11,
             "mode": 0,
             "inputs": [
                 {
@@ -630,10 +630,10 @@
                 }
             ],
             "properties": {
-                "cnr_id": "comfyui_essentials",
+                "aux_id": "cubiq/ComfyUI_essentials",
                 "ver": "33ff89fd354d8ec3ab6affb605a79a931b445d99",
                 "Node name for S&R": "ImageResize+",
-                "aux_id": "cubiq/ComfyUI_essentials"
+                "cnr_id": "comfyui_essentials"
             },
             "widgets_values": [
                 1024,
@@ -656,7 +656,7 @@
                 164.31304931640625
             ],
             "flags": {},
-            "order": 16,
+            "order": 12,
             "mode": 0,
             "inputs": [
                 {
@@ -737,7 +737,7 @@
                 82
             ],
             "flags": {},
-            "order": 14,
+            "order": 16,
             "mode": 0,
             "inputs": [
                 {
@@ -1105,7 +1105,7 @@
                 "Node name for S&R": "KSampler"
             },
             "widgets_values": [
-                786506531041769,
+                468156832163180,
                 "randomize",
                 40,
                 2,
@@ -1128,7 +1128,7 @@
             "flags": {
                 "collapsed": false
             },
-            "order": 17,
+            "order": 13,
             "mode": 0,
             "inputs": [
                 {
@@ -1263,7 +1263,7 @@
                 82
             ],
             "flags": {},
-            "order": 21,
+            "order": 22,
             "mode": 0,
             "inputs": [
                 {
@@ -1304,7 +1304,7 @@
                 58
             ],
             "flags": {},
-            "order": 15,
+            "order": 17,
             "mode": 0,
             "inputs": [
                 {
@@ -1534,7 +1534,7 @@
                 196.48919677734375
             ],
             "flags": {},
-            "order": 11,
+            "order": 10,
             "mode": 0,
             "inputs": [
                 {
@@ -1543,7 +1543,7 @@
                     "widget": {
                         "name": "text"
                     },
-                    "link": 90
+                    "link": 91
                 }
             ],
             "outputs": [
@@ -1992,7 +1992,8 @@
                     "type": "IMAGE",
                     "links": [
                         87,
-                        88
+                        88,
+                        92
                     ],
                     "slot_index": 0
                 }
@@ -2169,15 +2170,15 @@
             "id": 65,
             "type": "FSLoadImage",
             "pos": [
-                277.8594665527344,
-                1762.79248046875
+                284.7630310058594,
+                1765.848388671875
             ],
             "size": [
                 315,
                 318
             ],
             "flags": {},
-            "order": 5,
+            "order": 6,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -2213,7 +2214,7 @@
                 200
             ],
             "flags": {},
-            "order": 6,
+            "order": 5,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -2221,7 +2222,7 @@
                     "name": "text",
                     "type": "STRING",
                     "links": [
-                        90
+                        91
                     ],
                     "slot_index": 0
                 }
@@ -2233,7 +2234,48 @@
             },
             "widgets_values": [
                 "",
-                "Background Prompt"
+                "Load Text"
+            ]
+        },
+        {
+            "id": 68,
+            "type": "FSSaveImage",
+            "pos": [
+                4696.5986328125,
+                1893.7755126953125
+            ],
+            "size": [
+                315,
+                154
+            ],
+            "flags": {},
+            "order": 52,
+            "mode": 0,
+            "inputs": [
+                {
+                    "name": "images",
+                    "type": "IMAGE",
+                    "link": 92
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "filepath",
+                    "type": "STRING",
+                    "links": null
+                }
+            ],
+            "properties": {
+                "aux_id": "FlowScale-AI/flowscale-nodes",
+                "ver": "ae4978f9f330c1436efba9bf2411dc0ce7c20bd5",
+                "Node name for S&R": "FSSaveImage"
+            },
+            "widgets_values": [
+                "FlowScale",
+                "png",
+                "Output Image",
+                95,
+                false
             ]
         }
     ],
@@ -2847,12 +2889,20 @@
             "IMAGE"
         ],
         [
-            90,
+            91,
             66,
             0,
             47,
             0,
             "STRING"
+        ],
+        [
+            92,
+            58,
+            0,
+            68,
+            0,
+            "IMAGE"
         ]
     ],
     "groups": [
@@ -2985,15 +3035,28 @@
             "color": "#3f789e",
             "font_size": 24,
             "flags": {}
+        },
+        {
+            "id": 11,
+            "title": "Text Inputs",
+            "bounding": [
+                -786.3184204101562,
+                1039.8638916015625,
+                971.0231323242188,
+                559.9320068359375
+            ],
+            "color": "#3f789e",
+            "font_size": 24,
+            "flags": {}
         }
     ],
     "config": {},
     "extra": {
         "ds": {
-            "scale": 1.1,
+            "scale": 0.8160313923935716,
             "offset": [
-                348.52781037275685,
-                -1105.2488359269257
+                -3947.8528967160805,
+                -1722.213513571972
             ]
         }
     },
