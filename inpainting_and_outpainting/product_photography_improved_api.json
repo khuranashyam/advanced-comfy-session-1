@@ -133,7 +133,7 @@
     },
     "20": {
         "inputs": {
-            "seed": 654689829781574,
+            "seed": 1064581838240276,
             "steps": 20,
             "cfg": 8,
             "sampler_name": "euler",
@@ -359,7 +359,7 @@
     },
     "35": {
         "inputs": {
-            "seed": 786506531041769,
+            "seed": 468156832163180,
             "steps": 40,
             "cfg": 2,
             "sampler_name": "dpmpp_2m_sde",
@@ -789,11 +789,28 @@
     "66": {
         "inputs": {
             "default_value": "",
-            "label": "Background Prompt"
+            "label": "Load Text"
         },
         "class_type": "FSLoadText",
         "_meta": {
             "title": "[FS]⚡Load Text (Input)"
+        }
+    },
+    "68": {
+        "inputs": {
+            "filename_prefix": "FlowScale",
+            "format": "png",
+            "label": "Output Image",
+            "quality": 95,
+            "lossless": false,
+            "images": [
+                "58",
+                0
+            ]
+        },
+        "class_type": "FSSaveImage",
+        "_meta": {
+            "title": "[FS]⚡Save Image (Output)"
         }
     }
 }
