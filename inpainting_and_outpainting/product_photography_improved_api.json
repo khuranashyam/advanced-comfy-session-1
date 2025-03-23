@@ -758,23 +758,6 @@
             "title": "Save Image"
         }
     },
-    "64": {
-        "inputs": {
-            "filename_prefix": "FlowScale",
-            "format": "png",
-            "label": "Output Image",
-            "quality": 95,
-            "lossless": false,
-            "images": [
-                "58",
-                0
-            ]
-        },
-        "class_type": "FSSaveImage",
-        "_meta": {
-            "title": "[FS]⚡Save Image (Output)"
-        }
-    },
     "65": {
         "inputs": {
             "image": "example.png",
