@@ -1992,7 +1992,6 @@
                     "type": "IMAGE",
                     "links": [
                         87,
-                        88,
                         92
                     ],
                     "slot_index": 0
@@ -2126,47 +2125,6 @@
             ]
         },
         {
-            "id": 64,
-            "type": "FSSaveImage",
-            "pos": [
-                4592.61474609375,
-                2041.72998046875
-            ],
-            "size": [
-                315,
-                154
-            ],
-            "flags": {},
-            "order": 51,
-            "mode": 0,
-            "inputs": [
-                {
-                    "name": "images",
-                    "type": "IMAGE",
-                    "link": 88
-                }
-            ],
-            "outputs": [
-                {
-                    "name": "filepath",
-                    "type": "STRING",
-                    "links": null
-                }
-            ],
-            "properties": {
-                "aux_id": "FlowScale-AI/flowscale-nodes",
-                "ver": "ae4978f9f330c1436efba9bf2411dc0ce7c20bd5",
-                "Node name for S&R": "FSSaveImage"
-            },
-            "widgets_values": [
-                "FlowScale",
-                "png",
-                "Output Image",
-                95,
-                false
-            ]
-        },
-        {
             "id": 65,
             "type": "FSLoadImage",
             "pos": [
@@ -2249,7 +2207,7 @@
                 154
             ],
             "flags": {},
-            "order": 52,
+            "order": 51,
             "mode": 0,
             "inputs": [
                 {
@@ -2869,14 +2827,6 @@
             58,
             0,
             63,
-            0,
-            "IMAGE"
-        ],
-        [
-            88,
-            58,
-            0,
-            64,
             0,
             "IMAGE"
         ],
